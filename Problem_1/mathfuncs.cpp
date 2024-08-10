@@ -167,7 +167,7 @@ void Tan() {
 }
 
 void Log() {
-	PRINT("Get Log of a function: ");
+	PRINT("Get Natural Log of a num: ");
 	float a = 0;
 	std::cin >> a;
 	

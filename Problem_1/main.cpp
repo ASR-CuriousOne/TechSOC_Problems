@@ -17,6 +17,9 @@ int main()
 
 	PRINT("Welcome To Calculator");
 	bool exit = true;
+
+	int ops;
+
 	while(exit){
 
 	std::cout << "Choose the function u want to perform\n";
@@ -68,6 +71,7 @@ int main()
 		exit = false;
 		break;
 	}
-
+	std::system("pause");
 	}
+	
 }
