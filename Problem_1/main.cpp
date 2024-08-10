@@ -16,14 +16,15 @@ int main()
 	int option = 0;
 
 	PRINT("Welcome To Calculator");
+	bool exit = true;
+	while(exit){
 
-	
 	std::cout << "Choose the function u want to perform\n";
 	char operations[][4] = {"Add","Sub","Mul","Div","Mod","Fac","Sin","Cos","Tan","Log"};
 	int numOfoperations = sizeof(operations) / sizeof(char[4]);
 	PrintOperations((char*)operations, numOfoperations);
 	std::cout << "Solve Quadratic-" << numOfoperations + 1 << std::endl;
-
+	std::cout << "Type Anything else to exit" << "\n\n";
 	std::cout << "Type the corresponding number: ";
 	std::cin >> option;
 
@@ -64,7 +65,9 @@ int main()
 		break;
 		
 	default:
+		exit = false;
 		break;
 	}
-	
+
+	}
 }
